@@ -1,16 +1,16 @@
 import React from 'react';
-import { Text, Stylesheet } from 'react-native';
+import { Text, StyleSheet } from 'react-native';
 
 const HomeScreen = () => {
-    return (<Text style={hstyles.textsyle}>Hi there! I'm Lisa</Text>);
+    return (<Text style={styles.textStyle}>Hi there! I'm Lisa</Text>);
 }
-const hstyles = Stylesheet.create(
+const styles = StyleSheet.create(
     {
-        textsyle: {
-            fontsize: 50,
-            color: 'blue'
+        textStyle: {
+            fontSize: 50,
+            color: "blue",
         },
 
-    }
+    },
 );
 export default HomeScreen;
