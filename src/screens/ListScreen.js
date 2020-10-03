@@ -21,7 +21,7 @@ function ListScreen() {
     const uni7 = "CU";
     const uni8 = "SUST";
     return (
-        <View style={styles.viewStyle}>
+        <View style={s.viewStyle}>
             <FlatList
                 data={uni}
                 renderItem={function ({ item }) {
@@ -33,7 +33,7 @@ function ListScreen() {
         );
 };
 
-const styles = StyleSheet.create({
+const s = StyleSheet.create({
     textStyle: {
         fontSize: 30,
         color: 'blue',
