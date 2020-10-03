@@ -2,6 +2,16 @@ import React from 'react';
 import { Text, View, StyleSheet, FlatList } from 'react-native';
 
 function ListScreen() {
+    const uni = [{ name: "BUET", },
+        { name: "IUT" },
+        { name: "KUET" },
+        { name: "CUET" },
+        { name: "RUET" },
+        { name: "DUET" },
+        { name: "CU" },
+        {name:"DU"}
+
+    ];
     const uni1 = "BUET";
     const uni2 = "KUET";
     const uni3 = "IUT";
@@ -12,14 +22,13 @@ function ListScreen() {
     const uni8 = "SUST";
     return (
         <View style={styles.viewStyle}>
-            <Text style={styles.textStyle}>{uni1}</Text>
-            <Text style={styles.textStyle}>{uni2}</Text>
-            <Text style={styles.textStyle}>{uni3}</Text>
-            <Text style={styles.textStyle}>{uni4}</Text>
-            <Text style={styles.textStyle}>{uni5}</Text>
-            <Text style={styles.textStyle}>{uni6}</Text>
-            <Text style={styles.textStyle}>{uni7}</Text>
-            <Text style={styles.textStyle}>{uni8}</Text>
+            <FlatList
+                data={uni}
+                renderItem={function ({ item }) {
+                    return (<Text style={styles.textStyle}>{item.name}</Text>)
+                }}
+            />
+                     
         </View>
         );
 };
