@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, StyleSheet, Button, View, Image } from 'react-native';
+import { Text, StyleSheet, Button, View, Image, TouchableOpacity } from 'react-native';
 
 const HomeScreen = (props) => {
     console.log(props);
@@ -15,14 +15,19 @@ const HomeScreen = (props) => {
                     }
                 }
             />
-            
+            <TouchableOpacity
+                onPress={function () {
+                    //alert("Image pressed");
+                    console.log("image pressed!")
+                }}
+            >
             <Image source={{
                 height: 300,
                 width: 200,
                 uri: 'https://picsum.photos/seed/picsum/200/300'
             }}
-            />
-            
+                />
+            </TouchableOpacity>
         </View>
     );
 };
