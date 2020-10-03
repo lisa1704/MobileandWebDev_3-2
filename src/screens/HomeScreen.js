@@ -9,7 +9,7 @@ const HomeScreen = (props) => {
             title="Go to List Screen"
             onPress={
                 function () {
-                    alert("Button Pressed!");
+                    props.navigation.navigate("List");
                 }
             }
         />
