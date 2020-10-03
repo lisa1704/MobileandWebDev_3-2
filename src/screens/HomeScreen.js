@@ -16,8 +16,13 @@ const HomeScreen = (props) => {
                 }
             />
             
-            <Image source={require('./../../assets/logo.png')} />
-            #Image not displaying 
+            <Image source={{
+                height: 300,
+                width: 200,
+                uri: 'https://picsum.photos/seed/picsum/200/300'
+            }}
+            />
+            
         </View>
     );
 };
