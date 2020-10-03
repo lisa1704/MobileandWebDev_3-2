@@ -1,20 +1,21 @@
 import React from 'react';
 import { Text, StyleSheet, Button, View } from 'react-native';
 
-const HomeScreen = () => {
+const HomeScreen = (props) => {
+    console.log(props);
     return (<View>
-        <Text style={styles.textStyle}>Hi there! I'm Lisa</Text>
+        <Text style={styles.textStyle}>HOME SCREEN</Text>
         <Button
             title="Go to List Screen"
             onPress={
                 function () {
-                    console.log("Button Pressed!");
+                    alert("Button Pressed!");
                 }
             }
         />
     </View>
     );
-}
+};
 const styles = StyleSheet.create(
     {
         textStyle: {
@@ -22,6 +23,6 @@ const styles = StyleSheet.create(
             color: "blue",
         },
 
-    },
+    }
 );
 export default HomeScreen;
