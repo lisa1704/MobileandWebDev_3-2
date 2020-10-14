@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\.expo-shared",
+    "\\assets",
     "\\src",
+    "\\src\\components",
     "\\src\\screens"
   ],
-  "SelectedNode": "\\src\\screens\\HomeScreen.js",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }

@@ -21,6 +21,21 @@ const HomeScreen = (props) => {
                     console.log("image pressed!")
                 }}
             >
+             <Button
+                    title="Image Screen"
+                    onPress={function () {
+                        props.navigation.navigate("Image");
+                    }}
+                />
+
+                <Button
+                    title="Storage Screen"
+                    onPress={function () {
+                        props.navigation.navigate("Storage");
+                    }}
+                />
+
+
             <Image source={{
                 height: 300,
                 width: 200,

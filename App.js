@@ -1,4 +1,5 @@
 import React from 'react';
+//import { registerRootComponent } from 'expo';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './src/screens/HomeScreen';
@@ -12,11 +13,10 @@ function App() {
             <stack.Navigator initialRouteName="Home">
                 <stack.Screen name="Home" component={HomeScreen} />
                 <stack.Screen name="List" component={ListScreen} />
+
             </stack.Navigator>
         </NavigationContainer >     
     );
 }
 export default App;
-
-
 
