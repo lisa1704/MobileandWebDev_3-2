@@ -4,9 +4,8 @@
     "\\.expo-shared",
     "\\assets",
     "\\src",
-    "\\src\\components",
     "\\src\\screens"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\src\\screens\\StateScreen.js",
   "PreviewInSolutionExplorer": false
 }

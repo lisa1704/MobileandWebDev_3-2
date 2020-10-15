@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, Button, Stylesheet } from "react-native";
+import { Text, View, Button, StyleSheet } from "react-native";
 
 const StateScreen = () => {
     let counter = 0;
@@ -10,6 +10,7 @@ const StateScreen = () => {
             onPress={
                 function () {
                     counter += 1;
+                    console.log(counter);
                 }
             }
             color="purple"
@@ -19,6 +20,7 @@ const StateScreen = () => {
             onPress={
                 function () {
                     counter -= 1;
+                    console.log(counter);
                 }
             }
             color="red"
@@ -26,7 +28,7 @@ const StateScreen = () => {
     </View>
 };
 
-const styles = Stylesheet.create({
+const styles = StyleSheet.create({
     textStyle: {
         fontSize: 40,
         color: "brown",
