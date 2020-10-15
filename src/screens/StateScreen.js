@@ -1,15 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import { Text, View, Button, StyleSheet } from "react-native";
 
 const StateScreen = () => {
-    let counter = 0;
+    let [counter, setCounter] = useState(0);
     return <View>
         <Text style={styles.textStyle}>{counter}</Text>
         <Button
             title="Increase"
             onPress={
                 function () {
-                    counter += 1;
+                    setCounter(counter + 1);
                     console.log(counter);
                 }
             }
@@ -19,7 +19,7 @@ const StateScreen = () => {
             title="Decrease"
             onPress={
                 function () {
-                    counter -= 1;
+                    setCounter(counter - 1);
                     console.log(counter);
                 }
             }
