@@ -24,6 +24,15 @@ const HomeScreen = (props) => {
                 }
 
             />
+            <Button
+                title="Box Screen"
+                onPress={
+                    function () {
+                        props.navigation.navigate("Box");
+                    }
+                }
+
+            />
             <TouchableOpacity
                 onPress={function () {
                     //alert("Image pressed");
