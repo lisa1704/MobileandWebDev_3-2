@@ -33,6 +33,15 @@ const HomeScreen = (props) => {
                 }
 
             />
+            <Button
+                title="Input Screen"
+                onPress={
+                    function () {
+                        props.navigation.navigate("Input");
+                    }
+                }
+
+            />
             <TouchableOpacity
                 onPress={function () {
                     //alert("Image pressed");
