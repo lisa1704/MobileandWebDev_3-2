@@ -25,6 +25,7 @@ const HomeScreen = (props) => {
 
             />
             <Button
+
                 title="Box Screen"
                 onPress={
                     function () {
@@ -34,6 +35,7 @@ const HomeScreen = (props) => {
 
             />
             <Button
+                color="purple"
                 title="Input Screen"
                 onPress={
                     function () {
